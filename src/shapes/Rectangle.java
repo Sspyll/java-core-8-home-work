@@ -1,3 +1,7 @@
+package shapes;
+import tools.*;
+import utils.*;
+
 public class Rectangle extends Shape implements CalculatesPerimeter, CalculatesDiagonal {
     private int length;
     private int width;
@@ -18,7 +22,7 @@ public class Rectangle extends Shape implements CalculatesPerimeter, CalculatesD
 
     @Override
     public String getName() {
-        return "Rectangle";
+        return "shapes.Rectangle";
     }
 
     @Override

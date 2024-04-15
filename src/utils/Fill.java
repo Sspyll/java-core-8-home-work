@@ -1,21 +1,23 @@
+package utils;
+
 public class Fill {
     private String fillColor;
     private int opacity;
 
-    Fill(String fillColor, int opacity) {
+    public Fill(String fillColor, int opacity) {
         this.fillColor = fillColor;
         this.opacity = opacity;
     }
 
-    Fill(String fillColor) {
+    public Fill(String fillColor) {
         this(fillColor, 100);
     }
 
-    Fill(int opacity) {
+    public Fill(int opacity) {
         this("Blue", opacity);
     }
 
-    Fill() {
+    public Fill() {
         this("Blue", 100);
     }
 

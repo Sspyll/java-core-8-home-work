@@ -1,3 +1,7 @@
+package shapes;
+import tools.*;
+import utils.*;
+
 public abstract class Shape implements Adjustable, CalculatesArea, Drawable {
     private int positionX;
     private int positionY;

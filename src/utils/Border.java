@@ -1,21 +1,23 @@
+package utils;
+
 public class Border {
     private String borderColor;
     private int borderThickness;
 
-    Border(String borderColor, int borderThickness) {
+    public Border(String borderColor, int borderThickness) {
         this.borderColor = borderColor;
         this.borderThickness = borderThickness;
     }
 
-    Border(String borderColor) {
+    public Border(String borderColor) {
         this(borderColor, 1);
     }
 
-    Border(int borderThickness) {
+    public Border(int borderThickness) {
         this("Black", borderThickness);
     }
 
-    Border() {
+    public Border() {
         this("Black", 1);
     }
 

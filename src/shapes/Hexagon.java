@@ -1,7 +1,11 @@
-public class Square extends Shape implements CalculatesPerimeter, CalculatesDiagonal {
+package shapes;
+import tools.*;
+import utils.*;
+
+public class Hexagon extends Shape implements CalculatesPerimeter, CalculatesDiagonal {
     private int side;
 
-    public Square(int positionX, int positionY, Fill fill, Border border, int side) {
+    public Hexagon(int positionX, int positionY, Fill fill, Border border, int side) {
         super(positionX, positionY, fill, border);
         this.side = side;
     }
@@ -12,21 +16,21 @@ public class Square extends Shape implements CalculatesPerimeter, CalculatesDiag
 
     @Override
     public String getName() {
-        return "Square";
+        return "shapes.Hexagon";
     }
 
     @Override
     public double calculateArea() {
-        return getSide() * getSide();
+        return (3 * Math.sqrt(3) * getSide() * getSide()) / 2;
     }
 
     @Override
     public double calculatePerimeter() {
-        return 4 * getSide();
+        return 6 * getSide();
     }
 
     @Override
     public double calculateDiagonal() {
-        return Math.sqrt(2) * getSide();
+        return 2 * getSide();
     }
 }

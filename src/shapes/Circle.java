@@ -1,3 +1,7 @@
+package shapes;
+import tools.*;
+import utils.*;
+
 public class Circle extends Shape implements Drawable {
     private double radius;
 
@@ -20,7 +24,7 @@ public class Circle extends Shape implements Drawable {
 
     @Override
     public String getName() {
-        return "Circle";
+        return "shapes.Circle";
     }
 
     @Override

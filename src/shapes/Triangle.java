@@ -1,3 +1,7 @@
+package shapes;
+import tools.*;
+import utils.*;
+
 public class Triangle extends Shape implements CalculatesPerimeter {
     private int sideA;
     private int sideB;
@@ -34,7 +38,7 @@ public class Triangle extends Shape implements CalculatesPerimeter {
 
     @Override
     public String getName() {
-        return "Triangle";
+        return "shapes.Triangle";
     }
 
     @Override

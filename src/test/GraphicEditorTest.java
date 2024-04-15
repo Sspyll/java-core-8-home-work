@@ -1,4 +1,10 @@
-public class ShapeUtils {
+package test;
+
+import shapes.*;
+import tools.*;
+import utils.*;
+
+public class GraphicEditorTest {
 
     public static void main(String[] args) {
         Fill fill = new Fill("Pink", 90);

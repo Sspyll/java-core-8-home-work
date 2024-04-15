@@ -1,3 +1,5 @@
+package tools;
+
 public interface Adjustable {
     void rotate(int degrees);
 
